@@ -1,0 +1,13 @@
+{
+  "name": "vcts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm start --prefix vcts-api",
+    "client": "npm run dev --prefix vcts-react"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
